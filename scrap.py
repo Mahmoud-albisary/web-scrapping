@@ -25,5 +25,5 @@ for items in all:
     print(" ")
     a.append(d)
 a = pandas.DataFrame(a)
-a.to_csv("final.csv")
+a.to_csv("final.csv", index=False)
 print(a)

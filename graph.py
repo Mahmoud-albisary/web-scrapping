@@ -3,8 +3,9 @@ from bokeh.io import output_file, show
 from bokeh.models import NumeralTickFormatter,  HoverTool
 import pandas
 
-df = pandas.read_csv(r"C:\Users\Muh\web scrapping\final.csv")
+df = pandas.read_csv(r"C:\Users\mahmo\web scrapping\final.csv")
 count = []
+df = df.drop_duplicates()
 ad = df["address"]
 ad  = list(ad)
 counts = df["price"]
